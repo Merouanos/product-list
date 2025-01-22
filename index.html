@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <!--Tailwind cdn-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Extending colors-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green: {
+              200: 'hsl(148, 38%, 91%)',
+              600: 'hsl(169, 82%, 27%)',
+            },
+            red: 'hsl(0, 66%, 54%)',
+            white: 'hsl(0, 0%, 100%)',
+            grey: {
+              500: 'hsl(186, 15%, 59%)',
+              900: 'hsl(187, 24%, 22%)',
+            },
+          },
+        },
+      },
+    }
+  </script>
+  
+
+
+<!--Group styles-->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      
+     body{
+      font-family: "Red Hat Text";
+     }
+      .container{
+        @apply sm:w-11/12 px-5 sm:mx-auto mt-10
+      }
+      div>img{
+        @apply rounded-xl  shadow
+      }
+      button{
+        @apply  font-bold justify-center items-center  gap-5 px-5 py-2 sm:w-8/12 lg:text-[0.9rem] sm:text-[0.7rem] md:py-2  text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
+
+      }
+      h2{
+        @apply font-bold
+      }
+      p{
+        @apply text-orange-700
+      }
+
+      div>span{
+        @apply text-grey-500
+      }
+      article{
+        @apply flex flex-col md:gap-8 sm:gap-5 gap-10
+      }
+
+    
+    }
+  </style>
+
+
+</head>
+<body class="bg-orange-50 ">
+
+  <!--buying section-->
+<div class="container sm:grid gap-5  sm:grid-cols-9  flex flex-col">
+
+  <!--Title-->
+    <header class="col-span-2  row-start-1 row-span-1"><h1 class="font-bold text-4xl text-orange-950">Desserts</h1></header>
+
+
+
+    <!--Dessert page-->
+
+
+  <main class="row-start-2 col-span-6">
+    <section aria-label="Dessert list">
+      <ul class="sm:grid sm:grid-cols-3 gap-5 md:gap-10">
+
+        <!--Product 1-->
+          <li>
+            <article itemscope itemtype="https://schema.org/Product">
+
+              <!--Image and cart-->
+
+              <div class="relative">
+                <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+                <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+              </div>
+      
+
+
+                <!--Dessert and price-->
+
+              <div>
+                <span itemprop="category">Waffle</span>
+                <h2 itemprop="name">Waffle with Berries</h2>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                  <span itemprop="priceCurrency" content="USD">$</span>
+                  <span itemprop="price">6.50</span>
+                </p>
+              </div>
+      
+            </article>
+         </li>
+
+      
+
+   <!--Product 1-->
+   <li>
+    <article itemscope itemtype="https://schema.org/Product">
+
+      <!--Image and cart-->
+
+      <div class="relative">
+        <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+        <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+      </div>
+
+
+
+        <!--Dessert and price-->
+
+      <div>
+        <span itemprop="category">Waffle</span>
+        <h2 itemprop="name">Waffle with Berries</h2>
+        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <span itemprop="priceCurrency" content="USD">$</span>
+          <span itemprop="price">6.50</span>
+        </p>
+      </div>
+
+    </article>
+ </li>
+
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+ <!--Product 1-->
+ <li>
+  <article itemscope itemtype="https://schema.org/Product">
+
+    <!--Image and cart-->
+
+    <div class="relative">
+      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
+      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+    </div>
+
+
+
+      <!--Dessert and price-->
+
+    <div>
+      <span itemprop="category">Waffle</span>
+      <h2 itemprop="name">Waffle with Berries</h2>
+      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price">6.50</span>
+      </p>
+    </div>
+
+  </article>
+</li>
+
+
+
+     
+
+
+  
+   
+      </ul>
+    </section>
+  </main>
+
+
+  <!--The cart side-->
+
+  <aside aria-label="Your Cart" class="border flex flex-col items-center text-sm bg-white  rounded-2xl col-span-3 col-start-7 h-fit p-10 gap-y-7  row-span-2">
+    <h3 class="self-start text-orange-700 font-bold text-xl">Your Cart (<span>0</span>)</h3>
+    <img src="./assets/images/illustration-empty-cart.svg" alt="" srcset="">
+    <p class="text-amber-800">Your added items will appear here</p>
+  </aside>
+
+
+
+</div>
+
+
+
+
+<!--Attribution-->
+
+  <div class="container" aria-label="Developer links">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Merouanos">Merouanos</a>.
+  </div>
+</body>
+</html>
