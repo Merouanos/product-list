@@ -17,6 +17,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
+
+<!--Box icons-->
+<link rel="stylesheet" href="./assets/boxicons-2.1.4/css/boxicons.min.css">
+
   <!--Tailwind cdn-->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -55,21 +59,25 @@
         @apply sm:w-11/12 px-5 sm:mx-auto mt-10
       }
       div>img{
-        @apply rounded-xl  shadow
+        @apply rounded-xl  shadow 
       }
       button{
-        @apply  font-bold justify-center items-center  gap-5 px-5 py-2 sm:w-8/12 lg:text-[0.9rem] sm:text-[0.7rem] md:py-2  text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
+        @apply   font-bold  justify-center items-center  gap-5 px-5 py-2 sm:p-1 lg:p-2 sm:w-8/12 lg:text-[0.9rem] sm:text-[0.7rem]   text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
 
       }
+      button span{
+        @apply lg:inline md:text-xs sm:hidden 
+      }
+
       h2{
-        @apply font-bold
+        @apply font-semibold 
       }
       p{
-        @apply text-orange-700
+        @apply text-orange-700 font-semibold
       }
 
       div>span{
-        @apply text-grey-500
+        @apply text-grey-500 font-semibold
       }
       article{
         @apply flex flex-col md:gap-8 sm:gap-5 gap-10
@@ -106,9 +114,18 @@
 
               <div class="relative">
                 <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-                <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
+                <button>
+
+
+
+                  <img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" >
+                  <span>Add to Cart</span>
+                
+                
+          
+                </button>
               </div>
-      
+              
 
 
                 <!--Dessert and price-->
@@ -379,3 +396,7 @@
   </div>
 </body>
 </html>
+
+
+
+<script src="full.js"></script>
