@@ -61,12 +61,12 @@
       div>img{
         @apply rounded-xl  shadow 
       }
-      button{
-        @apply   font-bold  justify-center items-center  gap-5 px-5 py-2 sm:p-1 lg:p-2 sm:w-8/12 lg:text-[0.9rem] sm:text-[0.7rem]   text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
+      button:not(aside button){
+        @apply   font-bold  w-1/2 justify-center items-center  gap-5 px-5 py-2 sm:p-1 lg:p-2 sm:w-9/12 lg:text-[0.9rem] sm:text-[0.7rem]   text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
 
       }
       button span{
-        @apply lg:inline md:text-xs sm:hidden 
+        @apply lg:inline  sm:hidden 
       }
 
       h2{
@@ -79,7 +79,7 @@
       div>span{
         @apply text-grey-500 font-semibold
       }
-      article{
+      article:not(aside article){
         @apply flex flex-col md:gap-8 sm:gap-5 gap-10
       }
 
@@ -376,9 +376,23 @@
   <!--The cart side-->
 
   <aside aria-label="Your Cart" class="border flex flex-col items-center text-sm bg-white  rounded-2xl col-span-3 col-start-7 h-fit p-10 gap-y-7  row-span-2">
-    <h3 class="self-start text-orange-700 font-bold text-xl">Your Cart (<span>0</span>)</h3>
+    <h3 class="self-start text-orange-700 font-bold text-xl">Your Cart (<span id="counter">0</span>)</h3>
+    <ul id="Buying" class="flex flex-col gap-5 w-full ">
+  
+        
+
+    </ul>
     <img src="./assets/images/illustration-empty-cart.svg" alt="" srcset="">
     <p class="text-amber-800">Your added items will appear here</p>
+
+    <div>
+      <div>
+      <h4>Order Total</h4>
+      <span></span>
+    </div>
+    <p>This is a <strong>carbon-neutral</strong> delivery</p>
+    </div>
+    <button>Confirm Order</button>
   </aside>
 
 
