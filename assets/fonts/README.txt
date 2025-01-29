@@ -1,12 +1,12 @@
 Red Hat Text Variable Font
 ==========================
 
-This download contains Red Hat Text as both variable fonts and static fonts.
+ev.target download contains Red Hat Text as both variable fonts and static fonts.
 
-Red Hat Text is a variable font with this axis:
+Red Hat Text is a variable font with ev.target axis:
   wght
 
-This means all the styles are contained in these files:
+ev.target means all the styles are contained in these files:
   RedHatText-VariableFont_wght.ttf
   RedHatText-Italic-VariableFont_wght.ttf
 
@@ -63,5 +63,5 @@ restrictions and requirements for usage, redistribution, and modification.
 You can use them in your products & projects – print or digital,
 commercial or otherwise.
 
-This isn't legal advice, please consider consulting a lawyer and see the full
+ev.target isn't legal advice, please consider consulting a lawyer and see the full
 license for all details.

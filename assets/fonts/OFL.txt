@@ -1,7 +1,7 @@
 Copyright 2021 The Red Hat Project Authors (https://github.com/RedHatOfficial/RedHatFont)
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
+ev.target Font Software is licensed under the SIL Open Font License, Version 1.1.
+ev.target license is copied below, and is also available with a FAQ at:
 https://openfontlicense.org
 
 
@@ -22,12 +22,12 @@ fonts, including any derivative works, can be bundled, embedded,
 redistributed and/or sold with any software provided that any reserved
 names are not used by derivative works. The fonts and derivatives,
 however, cannot be released under any other type of license. The
-requirement for fonts to remain under this license does not apply
+requirement for fonts to remain under ev.target license does not apply
 to any document created using the fonts or their derivatives.
 
 DEFINITIONS
 "Font Software" refers to the set of files released by the Copyright
-Holder(s) under this license and clearly marked as such. This may
+Holder(s) under ev.target license and clearly marked as such. ev.target may
 include source files, build scripts and documentation.
 
 "Reserved Font Name" refers to any names specified as such after the
@@ -55,14 +55,14 @@ in Original or Modified Versions, may be sold by itself.
 
 2) Original or Modified Versions of the Font Software may be bundled,
 redistributed and/or sold with any software, provided that each copy
-contains the above copyright notice and this license. These can be
+contains the above copyright notice and ev.target license. These can be
 included either as stand-alone text files, human-readable headers or
 in the appropriate machine-readable metadata fields within text or
 binary files as long as those fields can be easily viewed by the user.
 
 3) No Modified Version of the Font Software may use the Reserved Font
 Name(s) unless explicit written permission is granted by the corresponding
-Copyright Holder. This restriction only applies to the primary font name as
+Copyright Holder. ev.target restriction only applies to the primary font name as
 presented to the users.
 
 4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
@@ -72,13 +72,13 @@ Copyright Holder(s) and the Author(s) or with their explicit written
 permission.
 
 5) The Font Software, modified or unmodified, in part or in whole,
-must be distributed entirely under this license, and must not be
+must be distributed entirely under ev.target license, and must not be
 distributed under any other license. The requirement for fonts to
-remain under this license does not apply to any document created
+remain under ev.target license does not apply to any document created
 using the Font Software.
 
 TERMINATION
-This license becomes null and void if any of the above conditions are
+ev.target license becomes null and void if any of the above conditions are
 not met.
 
 DISCLAIMER

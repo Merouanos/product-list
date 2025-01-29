@@ -61,8 +61,8 @@
       div>img{
         @apply rounded-xl  shadow 
       }
-      button:not(aside button){
-        @apply   font-bold  w-1/2 justify-center items-center  gap-5 px-5 py-2 sm:p-1 lg:p-2 sm:w-9/12 lg:text-[0.9rem] sm:text-[0.7rem]   text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
+      button:has(img){
+        @apply   font-bold  w-3/4 justify-center items-center  gap-5 px-5 py-2 sm:p-1 lg:p-2 sm:w-9/12 lg:text-[0.9rem] sm:text-[0.7rem]   text-orange-950  flex lg:gap-x-2 bg-white rounded-full    border border-grey-900  absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 hover:border-orange-700 hover:text-orange-700;
 
       }
       button span{
@@ -81,6 +81,10 @@
       }
       article:not(aside article){
         @apply flex flex-col md:gap-8 sm:gap-5 gap-10
+      }
+
+      .special{
+        @apply hover:bg-orange-900 rounded-full bg-orange-700 text-white w-3/4 sm:w-1/2 p-2 self-center
       }
 
     
@@ -104,269 +108,8 @@
 
   <main class="row-start-2 col-span-6">
     <section aria-label="Dessert list">
-      <ul class="sm:grid sm:grid-cols-3 gap-5 md:gap-10">
+      <ul id="location" class="sm:grid sm:grid-cols-3 gap-5 md:gap-10">
 
-        <!--Product 1-->
-          <li>
-            <article itemscope itemtype="https://schema.org/Product">
-
-              <!--Image and cart-->
-
-              <div class="relative">
-                <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-                <button>
-
-
-
-                  <img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" >
-                  <span>Add to Cart</span>
-                
-                
-          
-                </button>
-              </div>
-              
-
-
-                <!--Dessert and price-->
-
-              <div>
-                <span itemprop="category">Waffle</span>
-                <h2 itemprop="name">Waffle with Berries</h2>
-                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                  <span itemprop="priceCurrency" content="USD">$</span>
-                  <span itemprop="price">6.50</span>
-                </p>
-              </div>
-      
-            </article>
-         </li>
-
-      
-
-   <!--Product 1-->
-   <li>
-    <article itemscope itemtype="https://schema.org/Product">
-
-      <!--Image and cart-->
-
-      <div class="relative">
-        <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-        <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-      </div>
-
-
-
-        <!--Dessert and price-->
-
-      <div>
-        <span itemprop="category">Waffle</span>
-        <h2 itemprop="name">Waffle with Berries</h2>
-        <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-          <span itemprop="priceCurrency" content="USD">$</span>
-          <span itemprop="price">6.50</span>
-        </p>
-      </div>
-
-    </article>
- </li>
-
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
- <!--Product 1-->
- <li>
-  <article itemscope itemtype="https://schema.org/Product">
-
-    <!--Image and cart-->
-
-    <div class="relative">
-      <img src="./assets/images/image-baklava-desktop.jpg" alt="Waffle dessert" itemprop="image">
-      <button><img src="./assets/images/icon-add-to-cart.svg" alt="Purchase icon" ><span>Add to Cart</span></button>
-    </div>
-
-
-
-      <!--Dessert and price-->
-
-    <div>
-      <span itemprop="category">Waffle</span>
-      <h2 itemprop="name">Waffle with Berries</h2>
-      <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-        <span itemprop="priceCurrency" content="USD">$</span>
-        <span itemprop="price">6.50</span>
-      </p>
-    </div>
-
-  </article>
-</li>
-
-
-
-     
-
-
-  
    
       </ul>
     </section>
@@ -384,15 +127,18 @@
     </ul>
     <img src="./assets/images/illustration-empty-cart.svg" alt="" srcset="">
     <p class="text-amber-800">Your added items will appear here</p>
-
-    <div>
-      <div>
-      <h4>Order Total</h4>
-      <span></span>
-    </div>
-    <p>This is a <strong>carbon-neutral</strong> delivery</p>
-    </div>
-    <button>Confirm Order</button>
+ 
+    <div id="confirm" class="w-full flex-col gap-5 hidden">
+      <div class="flex items-center justify-between">
+      <h4 class="text-lg">Order Total</h4>
+      <span id="total" class="text-xl text-black font-semibold">$0</span>
+      </div>
+      <div class=" bg-orange-50 px-2 py-5 justify-center gap-2  rounded-xl items-center flex">
+     <p> <img class="w-6" src="./assets/images/icon-carbon-neutral.svg" alt="carbon neutral picture"></p>
+      
+      <p class="text-black font-normal">This is a <strong class="font-semibold">carbon-neutral</strong> delivery</p>
+      </div>
+    <button class="bg-orange-700 hover:bg-orange-800 rounded-full self-center py-2  w-full sm:w-8/12  text-white ">Confirm Order</button>
   </aside>
 
 
@@ -408,7 +154,57 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/Merouanos">Merouanos</a>.
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+  <!--Confirmation-->
+  <div id="inset" class="hidden  inset-0 overflow-y-auto   bg-black bg-opacity-50 backdrop-blur-sm ">
+  <div class="bg-white max-h-[90vh] sm:max-h-max overflow-y-auto  bottom-0 absolute sm:static mt-4 w-full sm:w-3/4 lg:w-5/12 mx-auto rounded-xl p-5 flex flex-col justify-between gap-4">
+    <img class="w-fit  rounded-none " src="./assets/images/icon-order-confirmed.svg" alt="order confirmed icon">
+    <h2 class="font-semibold text-orange-950 text-3xl">Order Confirmed</h2>
+    <p class="text-orange-950 font-normal ">We hope you enjoy your food!</p>
+    <div id="adding" class=" bg-orange-50 flex flex-col gap-4 p-5 rounded-xl">
+
+
+      
+
+      
+        
+
+      
+
+
+
+
+
+    </ul>
+      <div class="flex justify-between">
+        <p class="text-orange-950 capitalize text-xl font-semibold ">order total</p>
+        <span id="Sum" class="text-black text-2xl"></span>
+      </div>
+
+    <button id="newOrder" class="special">Start New Order</button>
+
+
+
+
+
+  </div>
+</div>
+
 </html>
 
 
