@@ -41,7 +41,7 @@ let fetchedjson;
                 <span itemprop="category">${i.category}</span>
                 <h2 itemprop="name">${i.name}</h2>
                 <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                  <span itemprop="priceCurrency" content="USD">$</span>
+                  <span itemprop="priceCurrency" content="USD">$</span>400
                   <span itemprop="price">${i.price}</span>
                 </p>
               </div>
@@ -120,6 +120,23 @@ let fetchedjson;
                 document.getElementById("newOrder").addEventListener("click",function(){
                     document.getElementById("inset").classList.replace("fixed","hidden");
                     document.body.classList.remove("overflow-hidden");
+                    
+                    const data = {
+                        Name: "Alice",
+                        total: document.getElementById("Sum").innerText,
+                    };
+                    
+                    fetch("https://sheetdb.io/api/v1/x7k93q8nix3jp", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ data }) // Corrected here
+                    })
+                    .then(response => response.json())
+                    .then(responseData => console.log("Success:", responseData))
+                    .catch(error => console.error("Error:", error));
+                    
+
+
                     window.location.reload(true);                    
                 })
                 
